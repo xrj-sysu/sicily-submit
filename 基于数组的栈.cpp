@@ -53,18 +53,4 @@ ErrorCode MyStack<StackEntry>::push(const StackEntry &item) {
 	size++;
 	return success;
 }
-int main() {
-	MyStack<int> s;
-	int temp;
-	cout << s.empty() << endl;
-	s.push(1);
-	cout << s.empty() << endl;
-	cout << s.push(2) << endl;
-	s.push(3);
-	s.top(temp);
-	cout << temp << endl;
-	s.pop();
-	return 0;
-}
-
 
